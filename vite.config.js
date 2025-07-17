@@ -35,7 +35,7 @@ export default defineConfig({
   // Carpeta de archivos estáticos (opcional)
   publicDir: 'public', 
 
-  base: './',
+  base: '/pfd-dev.github.io/',
 
   // Configuración de build (compilación)
   build: {
