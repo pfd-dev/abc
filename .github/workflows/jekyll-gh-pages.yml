@@ -1,4 +1,4 @@
-name: Build and Deploy Vite + Jest App to GitHub Pages
+name: Build and Deploy Vite + TypeScript + Jest App to GitHub Pages
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -30,13 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Jest tests with coverage
+      - name: Run tests (Jest + Coverage)
         run: npm run test -- --coverage
 
-      - name: Build Vite app
+      - name: Build Vite project
         run: npm run build
 
-      - name: Upload GitHub Pages artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -49,6 +49,9 @@ jobs:
     needs: build
 
     steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
