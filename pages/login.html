@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Tienda</title>
+    <link rel="stylesheet" href="../src/styles/index-style.css">
+    <link rel="stylesheet" href="../src/styles/login-style.css">
+    <script defer type="module" src="../src/controllers/index-controller.ts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+</head>
+<body>
+    <div id="Overlay"></div>
+    <header>
+        <h1 class="hidden">TIENDA CD DE MÚSICA</h1>
+        <figure class="banner">
+            <img src="../public/assets/banner2.png" alt="Banner rock store-cd">
+            <!--<figcaption>Banner rock store-cd</figcaption>-->
+        </figure>
+    </header>
+    <main>
+        <section  class="item-list">
+            <ul>
+                <li><a href="/index.html">Regresar a inicio</a></li>
+                <li><a href="/pages/newUser.html" class="admin">Regístrate</a></li>
+            </ul>
+        </section>
+        <div>
+            <form action="" id="FormLogin" class="form-login">
+                <label for="User">Usuario</label>
+                <input id="User" type="text" placeholder="HarryPotter">
+                <label for="Password">Password</label>
+                <input id="Password" type="text" placeholder="1234">
+                <button type="submit">Iniciar sesión</button>
+                <button type="reset">Borrar</button>
+            </form>
+            <div id="Acceso"></div>
+        </div>
+    </main>
+    <footer>
+            <div>
+                <h3>Contacta con nosotros</h3>
+                <p>Horario de atención telefónica:</p>
+                <p>L a V: 8:30 - 14:00</p>
+                <h4>605-207-922</h4>
+                <h4><a href="mailto:alfonsor814@gmail.com">alfonsor814@gmail.com</a></h4>
+                <a href="https://github.com/AlfonsoRG0720">github.com/AlfonsoRG0720</a>
+                <p>Calle Av Del Mar, 25.</p>
+                <p>Castellón, España</p>
+            </div>
+            <div class="logos">
+                <h3>Síguenos en RRSS:</h3>
+                <div>
+                  <a href="../index.html"><img src="../assets/logo-insta.png" alt="Logo instagram"></a>
+                  <a href="../index.html"><img src="../assets/logo-face.png" alt="logo facebook"></a>
+                  <a href="../index.html"><img src="../assets/logo-x.png" alt="logo x"></a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

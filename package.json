@@ -1,0 +1,44 @@
+{
+  "name": "tienda-musica-vite",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.3",
+    "jest-environment-jsdom": "^30.0.0",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.1"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "react-redux": "^9.2.0"
+  },
+  "description": "Tienda de musica con vite",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfonsoRG0720/Tienda-vite.git"
+  },
+  "keywords": [
+    "Vite",
+    "Typescript",
+    "Redux"
+  ],
+  "author": "Alfonso Rodriguez G.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfonsoRG0720/Tienda-vite/issues"
+  },
+  "homepage": "https://github.com/AlfonsoRG0720/Tienda-vite#readme"
+}

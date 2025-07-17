@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda con Vite + TS</title>
+    <script defer type="module" src="./src/controllers/index-controller.ts"></script>
+    <link rel="stylesheet" href="./src/styles/index-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+
+  </head>
+  <body id="pag-index">
+    <div id="Overlay"></div>
+    <header>
+        <h1 class="hidden">TIENDA CD DE MÚSICA</h1>
+        <figure class="banner">
+            <img src="./assets/banner2.png" alt="Banner rock store-cd">
+            <!--<figcaption>Banner rock store-cd</figcaption>-->
+        </figure>
+    </header>
+    <main>
+        <section  class="item-list">
+            <ul>
+                <li><a href="/index.html">CD's</a></li>
+                <li><a href="/index.html">DVD's</a></li>
+                <li><a href="/index.html">Vinilos</a></li>
+                <li><a href="/index.html">Cassetes</a></li>
+                <li><a href="./pages/gestionar.html" id="Btn-Gestionar" class="hidden">Gestionar</a></li>
+                <li><a href="./pages/dashboard.html" id="Btn-Dashboard" class="hidden">Dashboard</a></li>
+                <li><a href="./pages/login.html" class="admin" id="BtnIniciar">Iniciar sesión</a></li>
+                <li><a href="#" class="admin hidden" id="BtnCerrar">Cerrar sesión</a></li>
+            </ul>
+            <div id="IdUsuario">
+                <span>👤</span>
+                <p id="NameUsuario"></p>
+                <button id="Open-carrito">🛒<span id="Cant-carrito-btn"></span></button>
+            </div>
+        </section>
+        <section>
+            <div  class="container-gallery">
+                <div class="buttons">
+                    <button id="Cuadricula"><span class="material-symbols-outlined">grid_on</span></button>
+                    <button id="Lista"><span class="material-symbols-outlined">list</span></button>
+                    <span id="CantidadItems" class="cantidadItems"></span>
+                </div>
+                <div class="sort">
+                    <form action="#" id="OrdenarGaleria">
+                        <label for="Select">Ordenar por: </label>
+                        <select name="Select" >
+                            <option value="1">Antiguo a nuevo</option>
+                            <option value="2">Nuevo a antiguo</option>
+                            <option value="3">Precio menor a mayor</option>
+                            <option value="4">Precio mayor a menor</option>
+                        </select>
+                        <button type="submit">ordenar</button>
+                    </form>
+                </div>
+            </div>
+            <section class="ventana-articulos">
+                <div id="Gallery" class="gallery">
+                    
+                </div>
+                <aside id="Carrito-compra" class="carrito-compra">
+                    <h2>Carrito de compra</h2>
+                    <div id="TotalArticulosCarrito">
+                        <p>Artículos en el carrito:</p>
+                        <p id="sumaCarrito"></p>
+                    </div>
+                    <div id="Lista-carrito">
+                        
+                    </div>
+                    <div class="total-carrito">
+                        <p>Total: </p>
+                        <h4 id="Total"></h4>
+                    </div>
+                    <button class="btn-pagar" id="BTN-pagar">Pagar ahora</button>
+                    <button class="btn-pagar" id="BTN-vaciar-carrito">Vaciar carrito</button>
+                </aside>
+            </section>
+            <div class="paginado" id="Paginado">
+                <button id="BTN-anterior">Anterior</button>
+                <p id="Paginacion"></p>
+                <button id="BTN-siguiente">Siguiente</button>
+            </div>
+        </section>
+        <!--<div class="flotante" id="Flotante"></div>-->
+        <footer>
+            <div>
+                <h3>Contacta con nosotros</h3>
+                <p>Horario de atención telefónica:</p>
+                <p>L a V: 8:30 - 14:00</p>
+                <h4>605-207-922</h4>
+                <h4><a href="mailto:alfonsor814@gmail.com">alfonsor814@gmail.com</a></h4>
+                <a href="https://github.com/AlfonsoRG0720">github.com/AlfonsoRG0720</a>
+                <p>Calle Av Del Mar, 25.</p>
+                <p>Castellón, España</p>
+            </div>
+            <div class="logos">
+                <h3>Síguenos en RRSS:</h3>
+                <div>
+                  <a href="/index.html"><img src="/assets/logo-insta.png" alt="Logo instagram"></a>
+                  <a href="/index.html"><img src="/assets/logo-face.png" alt="logo facebook"></a>
+                  <a href="/index.html"><img src="/assets/logo-x.png" alt="logo x"></a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>

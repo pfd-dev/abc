@@ -1,0 +1,162 @@
+body{
+    background-color: var(--fondoGris);
+}
+
+.form-AgregarDisco{
+
+    div{
+        display: flex;
+
+        button{
+            margin: 1em;
+            width: 50%;
+            height: 3em;
+        }
+    }
+    
+}
+
+.editar-Disco{
+
+    div{
+        display: flex;
+
+        button{
+            margin: 1em;
+            width: 70%;
+            height: 3em;
+        }
+    }
+}
+
+.menuGestionar{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 1em;
+    width: 100%;
+    background-color: var(--fondoClaro);
+    border-top: 2px solid var(--colorNegro);
+    border-bottom: 2px solid var(--colorNegro);
+
+    a{
+        color: var(--colorNegro);
+        text-decoration: none;
+        border: 2px solid var(--colorAmarillo);
+        background-color: var(--colorAmarillo);
+        border-radius: 10px;
+        font-size: 1.5rem;
+        height: 30px;
+        padding: 0em 1em;
+    }
+
+    a:hover{
+        background-color: var(--colorNaranja);
+        border-color: var(--colorNaranja);
+        cursor: pointer;
+    }
+
+    button{
+        font-size: 1.2rem;
+        height: 30px;
+        padding: 0 1em;
+        border-radius: 10px;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: var(--colorVerde);
+        color: var(--colorBlanco);
+    }
+
+    #IdUsuario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            padding: 0 1rem 0 0.5rem;
+        }
+    }
+}
+
+.listaEditar{
+    display: flex;
+
+    .lista-discos{
+        width: 60%;
+        margin: 1em;
+        
+        h2{
+            font-size: 1.2em;
+        }
+
+        >div{
+            border: 1px solid black;
+            display: flex;
+            padding: 10px;
+
+            div{
+                display: block;
+                padding: 1em;
+            }
+
+            h3{
+                font-size: 0.9rem;
+            }
+            img{
+                width: 8em;
+            }
+
+            button{
+                margin: 5px 0;
+                height: 3em;
+                width: 5em;
+                position: relative;
+                right: 5px;
+            }
+        }
+    }
+
+    aside{
+        margin: 1em;
+        width: 25%;
+        position: sticky;   /*=====NO PUEDO HACER QUE SE QUEDE FIJO EN TOP=====*/
+        top: 0;
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 1px solid black;
+            
+
+            legend{
+                font-size: 2rem;
+            }
+
+            label{
+                width: 1em;
+            }
+        }
+
+        .ocultar{
+            display: none;
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .listaEditar{
+        margin: 1em ;
+    }
+}
+
+@media (min-width: 1025px) {
+    .listaEditar{
+        margin: 1em 1em 1em 2em;
+    }
+}

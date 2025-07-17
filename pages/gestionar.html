@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar items</title>
+    <link rel="shortcut icon" href="/assets/logo_transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/styles/index-style.css">
+    <link rel="stylesheet" href="../src/styles/gestionar-style.css">
+    <script defer type="module" src="../src/controllers/index-controller.ts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+</head>
+<body>
+    <header>
+        <h1 class="hidden">TIENDA CD DE MÚSICA</h1>
+        <figure class="banner">
+            <img src="../public/assets/banner2.png" alt="Banner rock store-cd">
+            <!--<figcaption>Banner rock store-cd</figcaption>-->
+        </figure>
+    </header>
+    <div  id="pag-gestionar">
+    <div class="menuGestionar">
+        <a href="../index.html" >Regresar a la tienda</a>
+        <button class="agregarDisco" id="AgregarDisco">Agregar nuevo</button>
+        <div id="IdUsuario">
+            <span>👤</span>
+            <p id="NameUsuario"></p>
+        </div>
+    </div>
+        
+    
+    <section class="listaEditar" id="ListaEditar">
+        <section class="lista-discos" id="Lista-Discos">
+            
+        </section>
+        <aside>
+            <form action="#" method="get" id="FORM-AgregarDisco" class="form-AgregarDisco">
+                <fieldset class="ocultar" id="FormularioAgregar">
+                    <legend>Agregar álbum</legend>
+                    <label for="Nombre">Nombre
+                    <input type="text" id="NombreNuevo" ></label>
+                    <label for="Anio">Año
+                    <input type="text" id="AnioNuevo" ></label>
+                    <label for="Imagen">imagen
+                    <input type="text" id="ImagenNuevo" ></label>
+                    <label for="Precio">Precio
+                    <input type="text" id="PrecioNuevo" ></label>
+                    <div>
+                        <button type="submit">Agregar</button>
+                        <button type="reset">Borrar todo</button>
+                    </div>
+                </fieldset>
+            </form>
+            <form action="#" method="get" id="Editar-Disco" class="editar-Disco">
+                <fieldset class="">
+                    <legend>Modificar álbum</legend>
+                    <label for="Nombre">Nombre
+                    <input type="text" id="NombreEditar"></label>
+                    <label for="Anio">Año
+                    <input type="text" id="AnioEditar"></label>
+                    <label for="Imagen">imagen
+                    <input type="text" id="ImagenEditar"></label>
+                    <label for="Precio">Precio
+                    <input type="text" id="PrecioEditar"></label>
+                    <div>
+                        <button type="submit">Actualizar</button>
+                        <button type="reset">Borrar todo</button>
+                    </div>
+                </fieldset>
+            </form>
+        </aside>
+    </section>
+    </div>
+    <footer>
+            <div>
+                <h3>Contacta con nosotros</h3>
+                <p>Horario de atención telefónica:</p>
+                <p>L a V: 8:30 - 14:00</p>
+                <h4>605-207-922</h4>
+                <h4><a href="mailto:alfonsor814@gmail.com">alfonsor814@gmail.com</a></h4>
+                <a href="https://github.com/AlfonsoRG0720">github.com/AlfonsoRG0720</a>
+                <p>Calle Av Del Mar, 25.</p>
+                <p>Castellón, España</p>
+            </div>
+            <div class="logos">
+                <h3>Síguenos en RRSS:</h3>
+                <div>
+                  <a href="../index.html"><img src="../assets/logo-insta.png" alt="Logo instagram"></a>
+                  <a href="../index.html"><img src="../assets/logo-face.png" alt="logo facebook"></a>
+                  <a href="../index.html"><img src="../assets/logo-x.png" alt="logo x"></a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
